@@ -293,7 +293,7 @@ with lazyllm.pipeline() as ppl:
     ppl.llm = lazyllm.OnlineChatModule(
         source="qwen",
         model="qwen-plus-latest",
-        api_key="sk-166f7ad51081474fb303edcfe3486f86",
+        api_key="sk-这里填写你申请的key",
     ).prompt(lazyllm.ChatPrompter(instruction=prompt, extra_keys=["context_str"]))
 
 # 启动Web服务模块，提供图形化界面进行交互
